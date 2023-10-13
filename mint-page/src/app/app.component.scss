@@ -1,0 +1,33 @@
+.app-root {
+    &__header {
+        border-bottom: 1px solid black;
+        height: 50px;
+    }
+
+    &__body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__main {
+        display: flex;
+    }
+
+    &__preview {
+        border: 1px solid black;
+        width: 50vh;
+        height: 50vh;
+    }
+
+    &__input-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__footer {
+        border-top: 1px solid black;
+        height: 50px;
+    }
+}
