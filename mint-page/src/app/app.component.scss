@@ -13,10 +13,10 @@
 
     &__main {
         display: flex;
+        gap: 20px;
     }
 
     &__preview {
-        border: 1px solid black;
         width: 50vh;
         height: 50vh;
     }
@@ -24,6 +24,14 @@
     &__input-container {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+        width: 50vh;
+        height: 50vh;
+    }
+
+    &__description-field {
+        height: 100%;
+        resize: none;
     }
 
     &__footer {

@@ -3,15 +3,12 @@
 </div>
 <div class="app-root__body">
   <div class="app-root__main">
-    <img class="app-root__preview"/>
-    <div class="smart-money-hunter__input-container">
-      <input class="form-control smart-money-hunter__input-data" placeholder="Address of: wallet, token, contract, etc..."/>
-      <button class="btn btn-primary">Aceptar</button>
-    </div>
+    <img #imgPreview class="img-thumbnail app-root__preview"/>
     <div class="app-root__input-container">
       <input class="form-control app-root__name-field" placeholder="Nombre"/>
-      <input class="app-root__url-field" placeholder="URL"/>
-      <button class="app-root__mint-button">Aceptar</button>
+      <input class="form-control app-root__url-field" placeholder="URL" (input)="inputUrlHandler($event)"/>
+      <textarea class="form-control app-root__description-field" placeholder="Descripción"></textarea>
+      <button class="btn btn-primary app-root__mint-button">Aceptar</button>
     </div>
   </div>
 </div>
