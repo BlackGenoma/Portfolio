@@ -1,11 +1,19 @@
 .app-root {
     &__header {
-        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
         height: 50px;
+        padding: 0 5px;
+        gap: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    &__wallet-button {
+        pointer-events: auto;
     }
 
     &__body {
-        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;

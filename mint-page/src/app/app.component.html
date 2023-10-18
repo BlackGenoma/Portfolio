@@ -1,5 +1,19 @@
 <div class="app-root__header">
-
+  <span class="btn btn-light" *ngIf="network">{{balance}}</span>
+  <div ngbDropdown *ngIf="selectedAddress">
+    <button ngbDropdownToggle class="btn btn-secondary">Ethereum</button>
+    <div ngbDropdownMenu>
+      <span ngbDropdownItem>Ethereum</span>
+      <span ngbDropdownItem>Solana</span>
+      <span ngbDropdownItem>Polygon</span>
+      <span ngbDropdownItem>Arbitrum</span>
+    </div>
+  </div>
+  <button class="btn btn-primary app-root__wallet-button"
+    (click)="walletButtonHandler()"
+    [disabled]="!web3"
+    [disableTooltip]="web3 != null"
+    ngbTooltip="Necesitas instalar una wallet de Ethereum.">{{walletButtonLabel}}</button>
 </div>
 <div class="app-root__body">
   <div class="app-root__main">
